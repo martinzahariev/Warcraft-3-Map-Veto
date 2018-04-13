@@ -1,0 +1,62 @@
+// ===========================================
+// Mixins
+// ===========================================
+
+// Box Shadow
+@mixin box-shadow($value)
+{
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+// Double Box Shadow
+@mixin box-shadowDouble($a, $b)
+{
+  -webkit-box-shadow: $a, $b;
+  -moz-box-shadow: $a, $b;
+  box-shadow: $a, $b;
+}
+
+// Width & Height
+@mixin wh($w, $h)
+{
+  width: $w;
+  height: $h;
+}
+
+// Transform
+@mixin transform($value)
+{
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+// Transition
+@mixin transition($value)
+{
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+
+// Border Radius
+@mixin b-radius($value)
+{
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+// Background Size
+@mixin bg-size($value)
+{
+  -webkit-background-size: $value;
+  -moz-background-size: $value;
+  -o-background-size: $value;
+  background-size: $value;
+}

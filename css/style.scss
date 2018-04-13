@@ -1,0 +1,12 @@
+// ===========================================
+// Partial Imports
+// ===========================================
+
+// Utilities
+@import "utilities/mixins",
+        "utilities/variables";
+
+// Partials
+
+@import "partials/options",
+        "partials/veto";

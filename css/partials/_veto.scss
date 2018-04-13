@@ -1,0 +1,35 @@
+// ===========================================
+// Veto Window
+// ===========================================
+
+.veto-window
+{
+  background: #c3c0b5;
+  padding: 50px 0;
+  text-align: center;
+  .vetoes
+  {
+    padding: 25px 50px;
+    width: 1000px;
+    margin: auto;
+    .maps
+    {
+      @include wh(210px, 210px);
+      display: inline-block;
+      margin: 20px;
+      &:hover {cursor: pointer;}
+    }
+    .maps:nth-of-type(1) {background: url(../img/map_Amazonia.png); @include bg-size(cover)};
+    .maps:nth-of-type(2) {background: url(../img/map_AncientIsles.png); @include bg-size(cover)};
+    .maps:nth-of-type(3) {background: url(../img/map_EchoIsles.png); @include bg-size(cover)};
+    .maps:nth-of-type(4) {background: url(../img/map_Floodplains1v1.png); @include bg-size(cover)};
+    .maps:nth-of-type(5) {background: url(../img/map_LastRefuge.png); @include bg-size(cover)};
+    .maps:nth-of-type(6) {background: url(../img/map_PlunderIsle.png); @include bg-size(cover)};
+    .maps:nth-of-type(7) {background: url(../img/map_RoadToStratholme.png); @include bg-size(cover)};
+    .maps:nth-of-type(8) {background: url(../img/map_TerenasStand.png); @include bg-size(cover)};
+    .maps:nth-of-type(9) {background: url(../img/map_TheTwoRivers.png); @include bg-size(cover)};
+    .maps:nth-of-type(10) {background: url(../img/map_TirisfalGlades.png); @include bg-size(cover)};
+    .maps:nth-of-type(11) {background: url(../img/map_TurtleRock.png); @include bg-size(cover)};
+    .maps:nth-of-type(12) {background: url(../img/map_TwistedMeadows.png); @include bg-size(cover)};
+  }
+}

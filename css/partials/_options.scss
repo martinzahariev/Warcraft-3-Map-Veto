@@ -1,0 +1,97 @@
+// ===========================================
+// Options
+// ===========================================
+
+//Buttons
+.options
+{
+  padding: 25px 0;
+  background: #F2EFE4;
+  border-bottom: 1px solid lightgray;
+  > div
+  {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    > div
+    {
+      position: relative;
+      width: 125px;
+      margin: auto;
+    }
+  }
+  .select
+  {
+    cursor: pointer;
+    @include wh(100%, 100%);
+    background: transparent;
+    color: #5E473D;
+    padding: 7.5px 15px;
+    border: 1px solid lightgray;
+    margin: auto;
+    @include box-shadow(0 4px 5px -5px #000);
+    font: .9rem "Arial Black";
+  }
+  .veto-start .select:hover
+  {
+    background: #81d781;
+    @include transition(.3s);
+    cursor: pointer;
+  }
+  .selectBox {position: relative;}
+  .overSelect
+  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+}
+
+// Alternatives
+.alternatives
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 34px;
+  bottom: 0;
+  display: none;
+}
+.game-mode .alternatives, .game-length .alternatives {width: 152px;}
+.game-maps .alternatives, .game-veto .alternatives {width: 225px}
+
+//wrapper
+.alternatives .wrapper
+{
+  width: 100%;
+  padding: 15px;
+  display: block;
+  font: .9rem "Arial Black";
+  background: #F2EFE4;
+  color: #5E473D;
+  border: 1px solid lightgray;
+  @include box-shadowDouble(1px 1px 4px lightgray, -1px 1px 4px lightgray);
+  > div:not(.groups), > label
+  {
+    padding: 5px;
+    &:hover
+    {
+      background: #AC2226 !important;
+      color: #F2EFE4 !important;
+      cursor: pointer;
+    }
+  }
+  .groups {color: #CB8C1D;}
+  > label
+  {
+    text-align: left;
+    display: block;
+    input[type=checkbox]:checked
+    {
+      @include transform(scale(1.75));
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Settings
+	Game Mode
+	Game Length
+	Maps
+	Veto Type
+
+Vetoes
+Picked Maps
