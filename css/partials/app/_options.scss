@@ -1,13 +1,14 @@
 // ===========================================
-// Options
+// App --> Veto Options
 // ===========================================
-
 //Buttons
 .options
 {
+  position: fixed;
+  width: 100%;
   padding: 25px 0;
   background: #F2EFE4;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b4b4b4;
   > div
   {
     display: inline-block;
@@ -72,8 +73,8 @@
   font: .9rem "Arial Black";
   background: #F2EFE4;
   color: #5E473D;
-  border: 1px solid lightgray;
-  @include box-shadowDouble(1px 1px 4px lightgray, -1px 1px 4px lightgray);
+  border: 1px solid #b4b4b4;
+  @include box-shadowDouble(1px 1px 4px #b4b4b4, -1px 1px 4px #b4b4b4);
   > div:not(.groups), > label
   {
     padding: 5px;

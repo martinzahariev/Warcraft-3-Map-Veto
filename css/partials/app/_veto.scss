@@ -1,0 +1,41 @@
+// ===========================================
+// App --> Veto Window
+// ===========================================
+
+.veto-window
+{
+  padding: 100px 0 25px 0;
+  text-align: center;
+  .vetoes
+  {
+    padding: 25px 50px;
+    width: 1000px;
+    margin: auto;
+    .maps
+    {
+      vertical-align: top;
+      @include wh(205px, 205px);
+      display: inline-block;
+      margin: 20px;
+      @include box-shadow(0 0 10px #000);
+      &:hover {cursor: pointer;}
+    }
+  }
+}
+
+.Ban, .Pick
+{
+  @include wh(100%, 100%);
+  background: rgba(0,0,0, 0.5);
+  font: 2.0rem "Arial Black";
+  line-height: 200px;
+  border: 2px solid red;
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+}
+.Pick
+{
+  border: 2px solid lawngreen;
+  color: lawngreen;
+}

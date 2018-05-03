@@ -1,175 +1,124 @@
-.options {
-  padding: 25px 0;
-  background: #F2EFE4;
-  border-bottom: 1px solid lightgray; }
-  .options > div {
-    display: inline-block;
-    width: 20%;
-    text-align: center; }
-    .options > div > div {
-      position: relative;
-      width: 125px;
-      margin: auto; }
-  .options .select {
-    cursor: pointer;
+#landing header {
+  background: #b00507;
+  text-align: center; }
+  #landing header > img {
+    background: url(/img/w3veto-logo.png); }
+
+#app {
+  background: #c3c0b5; }
+  #app .options {
+    position: fixed;
     width: 100%;
-    height: 100%;
-    background: transparent;
-    color: #5E473D;
-    padding: 7.5px 15px;
-    border: 1px solid lightgray;
-    margin: auto;
-    -webkit-box-shadow: 0 4px 5px -5px #000;
-    -moz-box-shadow: 0 4px 5px -5px #000;
-    box-shadow: 0 4px 5px -5px #000;
-    font: .9rem "Arial Black"; }
-  .options .veto-start .select:hover {
-    background: #81d781;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    cursor: pointer; }
-  .options .selectBox {
-    position: relative; }
-  .options .overSelect {
+    padding: 25px 0;
+    background: #F2EFE4;
+    border-bottom: 1px solid #b4b4b4; }
+    #app .options > div {
+      display: inline-block;
+      width: 20%;
+      text-align: center; }
+      #app .options > div > div {
+        position: relative;
+        width: 125px;
+        margin: auto; }
+    #app .options .select {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      color: #5E473D;
+      padding: 7.5px 15px;
+      border: 1px solid lightgray;
+      margin: auto;
+      -webkit-box-shadow: 0 4px 5px -5px #000;
+      -moz-box-shadow: 0 4px 5px -5px #000;
+      box-shadow: 0 4px 5px -5px #000;
+      font: .9rem "Arial Black"; }
+    #app .options .veto-start .select:hover {
+      background: #81d781;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+    #app .options .selectBox {
+      position: relative; }
+    #app .options .overSelect {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      cursor: pointer; }
+  #app .alternatives {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 34px;
     bottom: 0;
-    cursor: pointer; }
-
-.alternatives {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 34px;
-  bottom: 0;
-  display: none; }
-
-.game-mode .alternatives, .game-length .alternatives {
-  width: 152px; }
-
-.game-maps .alternatives, .game-veto .alternatives {
-  width: 225px; }
-
-.alternatives .wrapper {
-  width: 100%;
-  padding: 15px;
-  display: block;
-  font: .9rem "Arial Black";
-  background: #F2EFE4;
-  color: #5E473D;
-  border: 1px solid lightgray;
-  -webkit-box-shadow: 1px 1px 4px lightgray, -1px 1px 4px lightgray;
-  -moz-box-shadow: 1px 1px 4px lightgray, -1px 1px 4px lightgray;
-  box-shadow: 1px 1px 4px lightgray, -1px 1px 4px lightgray; }
-  .alternatives .wrapper > div:not(.groups), .alternatives .wrapper > label {
-    padding: 5px; }
-    .alternatives .wrapper > div:not(.groups):hover, .alternatives .wrapper > label:hover {
-      background: #AC2226 !important;
-      color: #F2EFE4 !important;
-      cursor: pointer; }
-  .alternatives .wrapper .groups {
-    color: #CB8C1D; }
-  .alternatives .wrapper > label {
-    text-align: left;
-    display: block; }
-    .alternatives .wrapper > label input[type=checkbox]:checked {
-      -webkit-transform: scale(1.75);
-      -moz-transform: scale(1.75);
-      -ms-transform: scale(1.75);
-      -o-transform: scale(1.75);
-      transform: scale(1.75); }
-
-.veto-window {
-  background: #c3c0b5;
-  padding: 50px 0;
-  text-align: center; }
-  .veto-window .vetoes {
-    padding: 25px 50px;
-    width: 1000px;
-    margin: auto; }
-    .veto-window .vetoes .maps {
-      width: 210px;
-      height: 210px;
-      display: inline-block;
-      margin: 20px; }
-      .veto-window .vetoes .maps:hover {
+    display: none; }
+  #app .game-mode .alternatives, #app .game-length .alternatives {
+    width: 152px; }
+  #app .game-maps .alternatives, #app .game-veto .alternatives {
+    width: 225px; }
+  #app .alternatives .wrapper {
+    width: 100%;
+    padding: 15px;
+    display: block;
+    font: .9rem "Arial Black";
+    background: #F2EFE4;
+    color: #5E473D;
+    border: 1px solid #b4b4b4;
+    -webkit-box-shadow: 1px 1px 4px #b4b4b4, -1px 1px 4px #b4b4b4;
+    -moz-box-shadow: 1px 1px 4px #b4b4b4, -1px 1px 4px #b4b4b4;
+    box-shadow: 1px 1px 4px #b4b4b4, -1px 1px 4px #b4b4b4; }
+    #app .alternatives .wrapper > div:not(.groups), #app .alternatives .wrapper > label {
+      padding: 5px; }
+      #app .alternatives .wrapper > div:not(.groups):hover, #app .alternatives .wrapper > label:hover {
+        background: #AC2226 !important;
+        color: #F2EFE4 !important;
         cursor: pointer; }
-    .veto-window .vetoes .maps:nth-of-type(1) {
-      background: url(../img/map_Amazonia.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(2) {
-      background: url(../img/map_AncientIsles.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(3) {
-      background: url(../img/map_EchoIsles.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(4) {
-      background: url(../img/map_Floodplains1v1.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(5) {
-      background: url(../img/map_LastRefuge.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(6) {
-      background: url(../img/map_PlunderIsle.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(7) {
-      background: url(../img/map_RoadToStratholme.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(8) {
-      background: url(../img/map_TerenasStand.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(9) {
-      background: url(../img/map_TheTwoRivers.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(10) {
-      background: url(../img/map_TirisfalGlades.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(11) {
-      background: url(../img/map_TurtleRock.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-    .veto-window .vetoes .maps:nth-of-type(12) {
-      background: url(../img/map_TwistedMeadows.png);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
+    #app .alternatives .wrapper .groups {
+      color: #CB8C1D; }
+    #app .alternatives .wrapper > label {
+      text-align: left;
+      display: block; }
+      #app .alternatives .wrapper > label input[type=checkbox]:checked {
+        -webkit-transform: scale(1.75);
+        -moz-transform: scale(1.75);
+        -ms-transform: scale(1.75);
+        -o-transform: scale(1.75);
+        transform: scale(1.75); }
+  #app .veto-window {
+    padding: 100px 0 25px 0;
+    text-align: center; }
+    #app .veto-window .vetoes {
+      padding: 25px 50px;
+      width: 1000px;
+      margin: auto; }
+      #app .veto-window .vetoes .maps {
+        vertical-align: top;
+        width: 205px;
+        height: 205px;
+        display: inline-block;
+        margin: 20px;
+        -webkit-box-shadow: 0 0 10px #000;
+        -moz-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000; }
+        #app .veto-window .vetoes .maps:hover {
+          cursor: pointer; }
+  #app .Ban, #app .Pick {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font: 2.0rem "Arial Black";
+    line-height: 200px;
+    border: 2px solid red;
+    text-transform: uppercase;
+    color: red;
+    text-align: center; }
+  #app .Pick {
+    border: 2px solid lawngreen;
+    color: lawngreen; }
 
 /*# sourceMappingURL=style.css.map */

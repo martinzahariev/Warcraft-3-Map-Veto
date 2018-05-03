@@ -3,10 +3,15 @@
 // ===========================================
 
 // Utilities
-@import "utilities/mixins",
-        "utilities/variables";
+@import "utilities/mixins";
 
-// Partials
+// Landing
+#landing {@import "partials/landing/header";}
 
-@import "partials/options",
-        "partials/veto";
+// App
+#app
+{
+  background: #c3c0b5;
+  @import "partials/app/options",
+  "partials/app/veto";
+}
