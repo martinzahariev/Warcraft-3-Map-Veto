@@ -1,0 +1,42 @@
+// ===========================================
+// Navigation
+// ===========================================
+
+// Regular
+nav
+{
+  @include transition(.3s);
+  position: fixed;
+  background: white;
+  width: 100%;
+  padding: 15px 25px;
+  border-bottom: 1px solid lightgray;
+  button
+  {
+    @include transition(.3s);
+    margin: 0 7.5px;
+    border: none;
+    background: transparent;
+    font: 1.0rem "Comic Sans MS", sans-serif;
+    &:hover
+    {
+      color: #b00507;
+      cursor: pointer;
+    }
+  }
+}
+
+// Nav in App
+
+#app nav
+{
+  z-index: 2;
+  padding: 0;
+  height: 30px;
+  button {opacity: 0;}
+  &:hover
+  {
+    button {opacity: 1}
+    padding: 15px 25px;
+  }
+}

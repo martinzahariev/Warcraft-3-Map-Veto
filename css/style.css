@@ -1,3 +1,39 @@
+nav {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: fixed;
+  background: white;
+  width: 100%;
+  padding: 15px 25px;
+  border-bottom: 1px solid lightgray; }
+  nav button {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0 7.5px;
+    border: none;
+    background: transparent;
+    font: 1.0rem "Comic Sans MS", sans-serif; }
+    nav button:hover {
+      color: #b00507;
+      cursor: pointer; }
+
+#app nav {
+  z-index: 2;
+  padding: 0;
+  height: 30px; }
+  #app nav button {
+    opacity: 0; }
+  #app nav:hover {
+    padding: 15px 25px; }
+    #app nav:hover button {
+      opacity: 1; }
+
 #landing header {
   background: #b00507;
   padding: 0 0 3px 0; }
@@ -7,7 +43,7 @@
     object-fit: contain;
     display: block;
     margin: auto;
-    padding: 25px 0 60px 0; }
+    padding: 60px 0; }
   #landing header > div {
     display: inline-block;
     width: 50%; }
@@ -80,7 +116,7 @@
     font: bold 1.5rem Garamond, sans-serif; }
   #landing .item .desc {
     font: 1.1rem Garamond, sans-serif;
-    line-height: 1.2;
+    line-height: 1.25;
     padding: 0 30px;
     text-align: justify; }
 
@@ -88,6 +124,7 @@
   background: #c3c0b5; }
   #app .options {
     position: fixed;
+    top: 30px;
     width: 100%;
     padding: 25px 0;
     background: #F2EFE4;
