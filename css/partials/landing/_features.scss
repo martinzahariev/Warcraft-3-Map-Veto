@@ -1,0 +1,42 @@
+// ===========================================
+// Landing --> Features
+// ===========================================
+
+.features {padding: 75px 0 50px 0;}
+
+// Item
+
+.item
+{
+  vertical-align: top;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 0 5px #bebebe;
+  -moz-box-shadow: 0 0 5px #bebebe;
+  box-shadow: 0 0 5px #bebebe;
+  text-align: center;
+  display: inline-block;
+  @include wh(27%, 300px);
+  margin: 0 3%;
+  padding: 25px 0;
+  .icon
+  {
+    margin: auto;
+    background: white;
+    @include wh(50px, 50px);
+    @include b-radius(50%);
+    border: 2px solid #b00507;
+    .fa
+    {
+      font-size: 1.5rem;
+      margin-top: 13px;
+    }
+  }
+  h2 {font: bold 1.5rem Garamond, sans-serif;}
+  .desc
+  {
+    font: 1.1rem Garamond, sans-serif;
+    line-height: 1.25;
+    padding: 0 30px;
+    text-align: justify;
+  }
+}

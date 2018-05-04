@@ -6,7 +6,11 @@
 @import "utilities/mixins";
 
 // Landing
-#landing {@import "partials/landing/header";}
+#landing
+{
+  @import "partials/landing/header",
+          "partials/landing/features";
+}
 
 // App
 #app

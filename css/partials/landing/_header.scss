@@ -5,9 +5,70 @@
 header
 {
   background: #b00507;
-  text-align: center;
+  padding: 0 0 3px 0;
   > img
   {
-    background: url(/img/w3veto-logo.png);
+    @include wh(200px, 100px);
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    padding: 25px 0 60px 0;
+  }
+  > div
+  {
+    display: inline-block;
+    width: 50%;
+  }
+  .left
+  {
+    .preview
+    {
+      text-align: center;
+      width: 550px;
+      height: 295px;
+      margin: auto;
+      background: white;
+      @include b-radius(18px 18px 0 0);
+      img
+      {
+        width: 500px;
+        margin-top: 25px;
+        border: 1px solid lightgray;
+      }
+    }
+  }
+  .right
+  {
+    width: 600px;
+    vertical-align: top;
+    h1
+    {
+      color: white;
+      font: 2.5rem "Comic Sans MS", sans-serif;
+      margin: 10px 0;
+    }
+    .desc
+    {
+      color: lightgray;
+      font: 1.0rem "Arial Black", sans-serif;
+    }
+    button
+    {
+      margin: 15px 0;
+      font: 1.0rem Verdana, sans-serif;
+      color: #b00507;
+      background: #FFD262;
+      border: none;
+      border-bottom: 4px solid #CDA759;
+      padding: 12.5px 30px;
+      position: relative;
+      @include b-radius(4px);
+      &:hover
+      {
+        top: 2px;
+        border-bottom: 2px solid #CDA759;
+        cursor: pointer;
+      }
+    }
   }
 }
