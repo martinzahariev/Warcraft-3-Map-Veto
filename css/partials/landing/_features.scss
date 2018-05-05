@@ -8,16 +8,24 @@
 
 .item
 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   vertical-align: top;
   background: #f7f7f7;
-  -webkit-box-shadow: 0 0 5px #bebebe;
-  -moz-box-shadow: 0 0 5px #bebebe;
-  box-shadow: 0 0 5px #bebebe;
+  @include box-shadow(0 0 5px #bebebe);
   text-align: center;
   display: inline-block;
   @include wh(27%, 300px);
+  @media screen and (max-width: 1160px) {height: 370px;}
   margin: 0 3%;
   padding: 25px 0;
+  @media screen and (max-width: 920px)
+  {
+    display: block;
+    margin: 50px auto;
+    @include wh(80%, auto);
+  }
   .icon
   {
     margin: auto;
