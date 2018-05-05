@@ -9,12 +9,21 @@
   margin: auto;
   margin-bottom: 50px;
   background: #F2EFE4;
-  width: 500px;
+  width: 650px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @media screen and (max-width: 680px) {width: 90%};
   padding: 50px;
   @include box-shadow(0 0 25px #000);
   > div {margin: 5px 0;}
   .title {font: bold 1.5rem "Comic Sans MS", sans-serif;}
-  .desc {font: 1.0rem "Comic Sans MS", sans-serif;}
+  .desc
+  {
+    font: 1.0rem "Comic Sans MS", sans-serif;
+    @media screen and (max-width: 500px) {
+      font: .9rem "Comic Sans MS", sans-serif;};
+  }
 
 }
 
