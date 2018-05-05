@@ -1,4 +1,5 @@
 nav {
+  z-index: 99;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -24,7 +25,6 @@ nav {
       cursor: pointer; }
 
 #app nav {
-  z-index: 2;
   padding: 0;
   height: 30px; }
   #app nav button {
@@ -237,5 +237,54 @@ nav {
   #app .Pick {
     border: 2px solid lawngreen;
     color: lawngreen; }
+
+#contact {
+  background: #b00507; }
+  #contact .contact {
+    position: relative;
+    top: 125px;
+    margin: auto;
+    margin-bottom: 50px;
+    background: #F2EFE4;
+    width: 500px;
+    padding: 50px;
+    -webkit-box-shadow: 0 0 25px #000;
+    -moz-box-shadow: 0 0 25px #000;
+    box-shadow: 0 0 25px #000; }
+    #contact .contact > div {
+      margin: 5px 0; }
+    #contact .contact .title {
+      font: bold 1.5rem "Comic Sans MS", sans-serif; }
+    #contact .contact .desc {
+      font: 1.0rem "Comic Sans MS", sans-serif; }
+  #contact form label {
+    display: block;
+    width: 100%; }
+    #contact form label input, #contact form label textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      padding: 15px 0;
+      font: 1.0rem "Comic Sans MS", sans-serif; }
+      #contact form label input:focus, #contact form label textarea:focus {
+        outline: none; }
+    #contact form label textarea {
+      resize: none;
+      height: 125px; }
+  #contact form input[type="submit"] {
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid lightgray;
+    color: gray;
+    font: 1.25rem "Comic Sans MS", sans-serif;
+    padding: 5px 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    #contact form input[type="submit"]:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

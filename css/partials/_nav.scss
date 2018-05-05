@@ -5,6 +5,7 @@
 // Regular
 nav
 {
+  z-index: 99;
   @include transition(.3s);
   position: fixed;
   background: white;
@@ -30,7 +31,6 @@ nav
 
 #app nav
 {
-  z-index: 2;
   padding: 0;
   height: 30px;
   button {opacity: 0;}

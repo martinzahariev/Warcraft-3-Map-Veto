@@ -1,0 +1,57 @@
+// ===========================================
+// Contact --> Contact
+// ===========================================
+
+.contact
+{
+  position: relative;
+  top: 125px;
+  margin: auto;
+  margin-bottom: 50px;
+  background: #F2EFE4;
+  width: 500px;
+  padding: 50px;
+  @include box-shadow(0 0 25px #000);
+  > div {margin: 5px 0;}
+  .title {font: bold 1.5rem "Comic Sans MS", sans-serif;}
+  .desc {font: 1.0rem "Comic Sans MS", sans-serif;}
+
+}
+
+// Contact Form
+
+form
+{
+  label
+  {
+    display: block;
+    width: 100%;
+    input, textarea
+    {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      padding: 15px 0;
+      font: 1.0rem "Comic Sans MS", sans-serif;
+      &:focus {outline: none}
+    }
+    textarea
+    {
+      resize: none;
+      height: 125px;
+    }
+  }
+  input[type="submit"]
+  {
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid lightgray;
+    color: gray;
+    font: 1.25rem "Comic Sans MS", sans-serif;
+    padding: 5px 20px;
+    @include transition(.3s);
+    &:hover
+    {cursor: pointer;}
+  }
+}

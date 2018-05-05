@@ -22,3 +22,10 @@
   @import "partials/app/options",
   "partials/app/veto";
 }
+
+// Contact Us
+#contact
+{
+  background: #b00507;
+  @import "partials/contact/contact";
+}
