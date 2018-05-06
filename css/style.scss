@@ -18,6 +18,7 @@
 // App
 #app
 {
+  overflow-x: hidden;
   background: #c3c0b5;
   @import "partials/app/options",
   "partials/app/veto";
