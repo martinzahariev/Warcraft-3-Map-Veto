@@ -115,7 +115,8 @@ nav {
       #landing header .right button:hover {
         top: 2px;
         border-bottom: 2px solid #CDA759;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-bottom: 17px; }
 #landing .features {
   padding: 75px 0 50px 0; }
 #landing .item {
@@ -130,12 +131,12 @@ nav {
   text-align: center;
   display: inline-block;
   width: 27%;
-  height: 300px;
+  height: 335px;
   margin: 0 3%;
   padding: 25px 0; }
   @media screen and (max-width: 1160px) {
     #landing .item {
-      height: 370px; } }
+      height: 420px; } }
   @media screen and (max-width: 920px) {
     #landing .item {
       display: block;
