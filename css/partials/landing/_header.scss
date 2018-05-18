@@ -67,9 +67,10 @@ header
       color: lightgray;
       font: 1.0rem "Arial Black", sans-serif;
     }
-    button
+    a
     {
-      margin: 15px 0;
+      text-decoration: none;
+      top: 30px;
       font: 1.0rem Verdana, sans-serif;
       color: #b00507;
       background: #FFD262;
@@ -80,7 +81,7 @@ header
       @include b-radius(4px);
       &:hover
       {
-        top: 2px;
+        top: 32px;
         border-bottom: 2px solid #CDA759;
         cursor: pointer;
         margin-bottom: 17px;

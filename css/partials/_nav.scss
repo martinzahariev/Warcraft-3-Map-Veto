@@ -12,8 +12,11 @@ nav
   width: 100%;
   padding: 15px 25px;
   border-bottom: 1px solid lightgray;
-  button
+  a
   {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
     @include transition(.3s);
     margin: 0 7.5px;
     border: none;
@@ -33,10 +36,10 @@ nav
 {
   padding: 0;
   height: 30px;
-  button {opacity: 0;}
+  a {opacity: 0;}
   &:hover
   {
-    button {opacity: 1}
+    a {opacity: 1}
     padding: 15px 25px;
   }
 }
