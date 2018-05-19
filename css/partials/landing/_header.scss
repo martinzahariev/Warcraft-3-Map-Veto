@@ -67,24 +67,20 @@ header
       color: lightgray;
       font: 1.0rem "Arial Black", sans-serif;
     }
-    a
+    button
     {
-      text-decoration: none;
-      top: 30px;
+      position: relative;
       font: 1.0rem Verdana, sans-serif;
       color: #b00507;
       background: #FFD262;
       border: none;
       border-bottom: 4px solid #CDA759;
       padding: 12.5px 30px;
-      position: relative;
+      margin: 20px 0;
       @include b-radius(4px);
       &:hover
       {
-        top: 32px;
-        border-bottom: 2px solid #CDA759;
         cursor: pointer;
-        margin-bottom: 17px;
       }
     }
   }
