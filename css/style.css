@@ -342,13 +342,14 @@ nav {
         width: 90%; } }
     #contact .contact > div {
       margin: 5px 0; }
-    #contact .contact .title {
+    #contact .contact h1 {
+      margin: 5px 0;
       font: bold 1.5rem "Comic Sans MS", sans-serif; }
     #contact .contact .desc {
       font: 1.0rem "Comic Sans MS", sans-serif; }
       @media screen and (max-width: 500px) {
         #contact .contact .desc {
-          font: .9rem "Comic Sans MS", sans-serif; } }
+          ont: .9rem "Comic Sans MS", sans-serif; } }
   #contact form label {
     display: block;
     width: 100%; }

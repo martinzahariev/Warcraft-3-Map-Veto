@@ -17,12 +17,15 @@
   padding: 50px;
   @include box-shadow(0 0 25px #000);
   > div {margin: 5px 0;}
-  .title {font: bold 1.5rem "Comic Sans MS", sans-serif;}
+  h1
+  {
+    margin: 5px 0;
+    font: bold 1.5rem "Comic Sans MS", sans-serif;
+  }
   .desc
   {
     font: 1.0rem "Comic Sans MS", sans-serif;
-    @media screen and (max-width: 500px) {
-      font: .9rem "Comic Sans MS", sans-serif;};
+    @media screen and (max-width: 500px) {font: .9rem "Comic Sans MS", sans-serif;};
   }
 
 }
